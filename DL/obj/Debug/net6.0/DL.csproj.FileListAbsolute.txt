@@ -1,0 +1,15 @@
+H:\Don_Dang_Ky_Lam_Them.API\DL\obj\Debug\net6.0\DL.csproj.AssemblyReference.cache
+H:\Don_Dang_Ky_Lam_Them.API\DL\obj\Debug\net6.0\DL.GeneratedMSBuildEditorConfig.editorconfig
+H:\Don_Dang_Ky_Lam_Them.API\DL\obj\Debug\net6.0\DL.AssemblyInfoInputs.cache
+H:\Don_Dang_Ky_Lam_Them.API\DL\obj\Debug\net6.0\DL.AssemblyInfo.cs
+H:\Don_Dang_Ky_Lam_Them.API\DL\obj\Debug\net6.0\DL.csproj.CoreCompileInputs.cache
+H:\Don_Dang_Ky_Lam_Them.API\DL\bin\Debug\net6.0\DL.deps.json
+H:\Don_Dang_Ky_Lam_Them.API\DL\bin\Debug\net6.0\DL.dll
+H:\Don_Dang_Ky_Lam_Them.API\DL\bin\Debug\net6.0\DL.pdb
+H:\Don_Dang_Ky_Lam_Them.API\DL\bin\Debug\net6.0\Common.dll
+H:\Don_Dang_Ky_Lam_Them.API\DL\bin\Debug\net6.0\Common.pdb
+H:\Don_Dang_Ky_Lam_Them.API\DL\obj\Debug\net6.0\DL.csproj.CopyComplete
+H:\Don_Dang_Ky_Lam_Them.API\DL\obj\Debug\net6.0\DL.dll
+H:\Don_Dang_Ky_Lam_Them.API\DL\obj\Debug\net6.0\refint\DL.dll
+H:\Don_Dang_Ky_Lam_Them.API\DL\obj\Debug\net6.0\DL.pdb
+H:\Don_Dang_Ky_Lam_Them.API\DL\obj\Debug\net6.0\ref\DL.dll

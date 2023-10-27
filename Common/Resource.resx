@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DefaultMISACode" xml:space="preserve">
+    <value>1</value>
+    <comment>Giá trị mặc định của MISACode khi không truyền dữ liệu vào</comment>
+  </data>
+  <data name="DevMsg_Exception" xml:space="preserve">
+    <value>Catch an exception</value>
+    <comment>Lỗi trả về cho Dev khi dính exception</comment>
+  </data>
+  <data name="DevMsg_ValidateFailed" xml:space="preserve">
+    <value>One or more validation errors occurred</value>
+    <comment>Lỗi trả về cho Dev khi 1 trong các trường validation dính lỗi</comment>
+  </data>
+  <data name="DuplicateCode" xml:space="preserve">
+    <value>Mã nhân viên đã tồn tại</value>
+    <comment>Lỗi validate khi trùng mã nhân viên</comment>
+  </data>
+  <data name="Error_InvalidData" xml:space="preserve">
+    <value>Dữ liệu không được để trống</value>
+    <comment>Lỗi validate các trường bắt buộc nhập</comment>
+  </data>
+  <data name="Excel_Table_Name" xml:space="preserve">
+    <value>Danh sách nhân viên</value>
+    <comment>Tên bảng excel</comment>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Nữ</value>
+    <comment>Giới tính nam</comment>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Nam</value>
+    <comment>Giới tính nữ</comment>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Khác</value>
+    <comment>Giới tính khác</comment>
+  </data>
+  <data name="OverTimeInWorkingShift_AfterShift" xml:space="preserve">
+    <value>Sau ca</value>
+    <comment>thời điểm làm thêm sau ca</comment>
+  </data>
+  <data name="OverTimeInWorkingShift_BeforeShift" xml:space="preserve">
+    <value>Trước ca</value>
+    <comment>thời điểm làm thêm trước ca</comment>
+  </data>
+  <data name="OverTimeInWorkingShift_DayOff" xml:space="preserve">
+    <value>Ngày nghỉ</value>
+    <comment>thời điểm làm thêm ngày nghỉ</comment>
+  </data>
+  <data name="OverTimeInWorkingShift_MiddleShift" xml:space="preserve">
+    <value>Nghỉ giữa ca</value>
+    <comment>thời điểm làm thêm nghỉ giữa ca</comment>
+  </data>
+  <data name="Overtime_ApplyDate" xml:space="preserve">
+    <value>Ngày nộp đơn</value>
+  </data>
+  <data name="Overtime_ApprovalName" xml:space="preserve">
+    <value>Người duyệt</value>
+  </data>
+  <data name="Overtime_BreakTimeFrom" xml:space="preserve">
+    <value>Nghỉ giữa ca từ</value>
+  </data>
+  <data name="Overtime_BreakTimeTo" xml:space="preserve">
+    <value>Nghỉ giữa ca đến</value>
+  </data>
+  <data name="Overtime_DepartmentName" xml:space="preserve">
+    <value>Đơn vị công tác</value>
+  </data>
+  <data name="Overtime_Description" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="OverTime_Duplicate" xml:space="preserve">
+    <value>Đơn đăng ký làm thêm đã tồn tại. Vui lòng kiểm tra lại.</value>
+  </data>
+  <data name="Overtime_EmployeeCode" xml:space="preserve">
+    <value>Mã nhân viên</value>
+  </data>
+  <data name="Overtime_FullName" xml:space="preserve">
+    <value>Người nộp đơn</value>
+  </data>
+  <data name="Overtime_OverTimeInWorkingShiftName" xml:space="preserve">
+    <value>Thời điểm làm thêm</value>
+  </data>
+  <data name="Overtime_PositionName" xml:space="preserve">
+    <value>Vị trí công việc</value>
+  </data>
+  <data name="Overtime_Reason" xml:space="preserve">
+    <value>Lý do làm thêm</value>
+  </data>
+  <data name="Overtime_RelationShipNames" xml:space="preserve">
+    <value>Người liên quan</value>
+  </data>
+  <data name="Overtime_Status" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="Overtime_ToDate" xml:space="preserve">
+    <value>Làm thêm đến</value>
+  </data>
+  <data name="Overtime_WorkingShiftName" xml:space="preserve">
+    <value>Ca áp dụng</value>
+  </data>
+  <data name="Ovettime_FromDate" xml:space="preserve">
+    <value>Làm thêm từ</value>
+  </data>
+  <data name="ServiceResult_Exception" xml:space="preserve">
+    <value>Execute SQL Command catch Exception</value>
+    <comment>Lỗi trả về khi thực hiện câu lệnh SQL bắt được ngoại lệ</comment>
+  </data>
+  <data name="ServiceResult_Fail" xml:space="preserve">
+    <value>Execute SQL Command return null</value>
+    <comment>Lỗi trả về khi thự hiện câu lệnh SQL nhưng không trả về kết quả</comment>
+  </data>
+  <data name="ServiceResult_Success" xml:space="preserve">
+    <value>Execute SQL Command Success</value>
+    <comment>Thực hiện câu lệnh SQL thành công</comment>
+  </data>
+  <data name="Status_All" xml:space="preserve">
+    <value>Tất cả</value>
+    <comment>trạng thái tất cả</comment>
+  </data>
+  <data name="Status_Approved" xml:space="preserve">
+    <value>Đã duyệt</value>
+    <comment>trạng thái đã duyệt</comment>
+  </data>
+  <data name="Status_Denied" xml:space="preserve">
+    <value>Từ chối</value>
+    <comment>trạng thái từ chối</comment>
+  </data>
+  <data name="Status_Wait" xml:space="preserve">
+    <value>Chờ duyệt</value>
+    <comment>trạng thái chờ duyệt</comment>
+  </data>
+  <data name="Title_BankBranch" xml:space="preserve">
+    <value>Chi nhánh TK ngân hàng</value>
+    <comment>Chi nhánh tài khoản ngân hàng</comment>
+  </data>
+  <data name="Title_BankName" xml:space="preserve">
+    <value>Tên ngân hàng</value>
+  </data>
+  <data name="Title_BankNumber" xml:space="preserve">
+    <value>Số tài khoản</value>
+  </data>
+  <data name="Title_DateOfBirth" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+  <data name="Title_Department" xml:space="preserve">
+    <value>Tên đơn vị</value>
+  </data>
+  <data name="Title_EmployeeCode" xml:space="preserve">
+    <value>Mã nhân viên</value>
+  </data>
+  <data name="Title_FullName" xml:space="preserve">
+    <value>Tên nhân viên</value>
+  </data>
+  <data name="Title_Gender" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="Title_IdentityNumber" xml:space="preserve">
+    <value>Số CMND</value>
+    <comment>Số chứng minh nhân dân</comment>
+  </data>
+  <data name="Title_Index" xml:space="preserve">
+    <value>STT</value>
+    <comment>Số thứ tự</comment>
+  </data>
+  <data name="Title_Position" xml:space="preserve">
+    <value>Chức danh</value>
+  </data>
+  <data name="UserMsg_Exception" xml:space="preserve">
+    <value>Có lỗi xảy ra, vui lòng liên hệ trung tâm tư vấn!</value>
+    <comment>Lỗi trả về cho người dùng khi dính ngoại lệ</comment>
+  </data>
+  <data name="UserMsg_ValidateFailed" xml:space="preserve">
+    <value>Dữ liệu đầu vào không hợp lệ</value>
+    <comment>Lỗi trả về cho người dùng khi đầu vào 1 trong các trường validate không hợp lệ</comment>
+  </data>
+  <data name="WorkingShift_FirstCase" xml:space="preserve">
+    <value>Ca 1</value>
+    <comment>Ca làm thêm 1</comment>
+  </data>
+  <data name="WorkingShift_InWork" xml:space="preserve">
+    <value>Ca hành chính</value>
+    <comment>Ca làm thêm hành chính</comment>
+  </data>
+  <data name="WorkingShift_NightCase" xml:space="preserve">
+    <value>Ca đêm</value>
+    <comment>Ca làm thêm đêm</comment>
+  </data>
+  <data name="WorkingShift_SecondCase" xml:space="preserve">
+    <value>Ca 2</value>
+    <comment>Ca làm thêm 2</comment>
+  </data>
+  <data name="WrongCodeFormat" xml:space="preserve">
+    <value>Mã nhân viên không đúng định dạng (NV-x) với x là số thứ tự nhân viên</value>
+    <comment>Lỗi trả về khi mã nhân viên không đúng định dạng</comment>
+  </data>
+  <data name="WrongEmailFormat" xml:space="preserve">
+    <value>Email sai định dạng</value>
+    <comment>Lỗi trả về khi Email không đúng định dạng</comment>
+  </data>
+  <data name="WrongOnlyNumberFormat" xml:space="preserve">
+    <value>Trường chỉ được phép chứa số</value>
+    <comment>Lỗi trả về khi trường chỉ được phép chứa số nhưng đầu vào sai định dạng</comment>
+  </data>
+</root>
