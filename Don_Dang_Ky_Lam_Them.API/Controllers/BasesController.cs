@@ -29,7 +29,126 @@ namespace Don_Dang_Ky_Lam_Them.API.Controllers
         #endregion
 
         #region Method
+        /// <summary>
+        /// API sửa thông tin chi tiêt 1 bản ghi
+        /// </summary>
+        /// <param name="recordId">Id bản ghi cần sửa</param>
+        /// <param name="record">Thông tin cập nhật của bản ghi</param>
+        /// <returns>1 nếu thành công</returns>
+        [HttpPut("{recordId}")]
+        public IActionResult UpdateRecord([FromRoute] Guid recordId, [FromBody] T record)
+        {
+            try
+            {
 
+                var serviceResult = _baseBL.UpdateRecord(recordId, record);
+
+
+                if (serviceResult.IsSuccess == true)
+                {
+                    return StatusCode(200, QueryResult.Success);
+                }
+                else
+                {
+                    if (serviceResult.Data == Resource.ServiceResult_Fail)
+                    {
+                        return StatusCode(204, new ErrorResult
+                        {
+                            ErrorCode = ErrorCode.SqlReturnNull,
+                            DevMsg = Resource.ServiceResult_Fail,
+                            UserMsg = Resource.UserMsg_Exception,
+                            TradeId = HttpContext.TraceIdentifier,
+                        });
+                    }
+                    else if (serviceResult.Data == Resource.ServiceResult_Exception)
+                    {
+                        return StatusCode(500, new ErrorResult
+                        {
+                            ErrorCode = ErrorCode.SqlCatchException,
+                            DevMsg = Resource.ServiceResult_Exception,
+                            UserMsg = Resource.UserMsg_Exception,
+                            TradeId = HttpContext.TraceIdentifier,
+                        });
+                    }
+                    else
+                    {
+                        return StatusCode(400, serviceResult.Data);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500, new ErrorResult
+                {
+                    ErrorCode = ErrorCode.Exception,
+                    DevMsg = Resource.DevMsg_Exception,
+                    UserMsg = Resource.UserMsg_Exception,
+                    TradeId = HttpContext.TraceIdentifier,
+                });
+            }
+        }
+
+        /// <summary>
+        /// API Thêm mới thông tin bản ghi
+        /// </summary>
+        /// <param name="record"></param>
+        /// <returns></returns>
+
+        [HttpPost]
+        public IActionResult InsertRecord([FromBody] T record)
+        {
+            try
+            {
+
+                var serviceResult = _baseBL.InsertRecord(record);
+
+                if (serviceResult.IsSuccess == true)
+                {
+                    return StatusCode(201, QueryResult.Success);
+                }
+                else
+                {
+                    if (serviceResult.Data == Resource.ServiceResult_Fail)
+                    {
+                        return StatusCode(204, new ErrorResult
+                        {
+                            ErrorCode = ErrorCode.SqlReturnNull,
+                            DevMsg = Resource.ServiceResult_Fail,
+                            UserMsg = Resource.UserMsg_Exception,
+                            TradeId = HttpContext.TraceIdentifier,
+                        });
+                    }
+                    else if (serviceResult.Data == Resource.ServiceResult_Exception)
+                    {
+                        return StatusCode(500, new ErrorResult
+                        {
+                            ErrorCode = ErrorCode.SqlCatchException,
+                            DevMsg = Resource.ServiceResult_Exception,
+                            UserMsg = Resource.UserMsg_Exception,
+                            TradeId = HttpContext.TraceIdentifier,
+                        });
+                    }
+                    else
+                    {
+                        return StatusCode(400, serviceResult.Data);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500, new ErrorResult
+                {
+                    ErrorCode = ErrorCode.Exception,
+                    DevMsg = Resource.DevMsg_Exception,
+                    UserMsg = Resource.UserMsg_Exception,
+                    TradeId = HttpContext.TraceIdentifier,
+                });
+            }
+        }
         /// <summary>
         /// API xoá thông tin bản ghi
         /// </summary>
