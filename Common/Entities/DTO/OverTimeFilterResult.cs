@@ -32,7 +32,6 @@ namespace Common.Entities.DTO
         #region Constructor
         /// <summary>
         /// Kết quả trả về khi phân trang
-        /// author: VietDV(27/3/2023)
         /// </summary>
         /// <param name="data">danh sách các bản ghi thoả mãn</param>
         /// <param name="totalRecord">tổng số bản ghi trong DB</param>
