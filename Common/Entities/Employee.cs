@@ -1,5 +1,4 @@
 ﻿using Common.Enums;
-using Demo.WebApplication.Common.Enums;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.InteropServices;

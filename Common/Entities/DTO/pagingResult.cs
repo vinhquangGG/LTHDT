@@ -1,6 +1,6 @@
 ﻿using Common.Entities;
 
-namespace Demo.WebApplication.Common.Entities.DTO
+namespace Common.Entities.DTO
 {
     public class PagingResult
     {

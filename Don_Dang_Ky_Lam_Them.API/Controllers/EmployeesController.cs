@@ -17,7 +17,7 @@ using Don_Dang_Ky_Lam_Them.API.Controllers;
 
 namespace API.Controllers
 {
-    [Route("api/v1/[controller]")] //attribute: http://localhost:43154/api/[controller]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class EmployeesController : BasesController<Employee>
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo.WebApplication.Common.Enums
+namespace Common.Enums
 {
     /// <summary>
     /// Trạng thái
