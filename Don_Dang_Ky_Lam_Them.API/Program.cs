@@ -1,9 +1,11 @@
 using BL;
 using BL.BaseBL;
+using BL.DepartmentBL;
 using BL.EmployeeBL;
 using BL.OverTimeBL;
 using DL;
 using DL.BaseDL;
+using DL.DepartmentDL;
 using DL.EmployeeDL;
 using DL.OverTimeDL;
 using Don_Dang_Ky_Lam_Them.API;
@@ -32,6 +34,8 @@ builder.Services.AddCors(p => p.AddPolicy("MyCors", build =>
 //Dependency injection
 builder.Services.AddScoped<IEmployeeDL, EmployeeDL>();
 builder.Services.AddScoped<IEmployeeBL, EmployeeBL>();
+builder.Services.AddScoped<IDepartmentDL, DepartmentDL>();
+builder.Services.AddScoped<IDepartmentBL, DepartmentBL>();
 builder.Services.AddScoped<IOverTimeBL, OverTimeBL>();
 builder.Services.AddScoped<IOverTimeDL, OverTimeDL>();
 builder.Services.AddScoped(typeof(IBaseBL<>), typeof(BaseBL<>));

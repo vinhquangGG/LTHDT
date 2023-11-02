@@ -11,6 +11,7 @@ using Common;
 using BL.EmployeeBL;
 using DocumentFormat.OpenXml.Bibliography;
 using Don_Dang_Ky_Lam_Them.API.Controllers;
+using BL.BaseBL;
 
 //test exception
 //throw new NotImplementedException();
@@ -22,15 +23,16 @@ namespace API.Controllers
     public class EmployeesController : BasesController<Employee>
     {
         #region Field
-
+        public IBaseBL<Employee> _baseBL;
         private IEmployeeBL _employeeBL;
 
         #endregion
 
         #region Constructor
-        public EmployeesController(IEmployeeBL employeeBL) : base(employeeBL)
+        public EmployeesController(IBaseBL<Employee> baseBL,IEmployeeBL employeeBL) : base(employeeBL)
         {
             _employeeBL = employeeBL;
+            _baseBL = baseBL;
         }
         #endregion
 
